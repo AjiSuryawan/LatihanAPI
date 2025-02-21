@@ -1,5 +1,6 @@
 package com.example.latihanapi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edUsername;
     EditText edPassword;
     Button btnLogin;
+    Button btnRegister;
     ProgressBar pbLoading;
     private ApiService apiService;
 
@@ -35,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
         edUsername = (EditText) findViewById(R.id.edusername);
         edPassword = (EditText) findViewById(R.id.edPassword);
         btnLogin = (Button) findViewById(R.id.btnLogin);
+        btnRegister = (Button) findViewById(R.id.btnRegister);
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RegisterPage.class));
+            }
+        });
         pbLoading = (ProgressBar) findViewById(R.id.pbLoading);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

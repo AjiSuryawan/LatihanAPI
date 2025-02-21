@@ -7,41 +7,50 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegisterPage">
+
+    <TextView
+        android:text="Register Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <EditText
-        android:layout_margin="20dp"
-        android:hint="input username"
         android:id="@+id/edusername"
+        android:layout_margin="20dp"
+        android:hint="username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <EditText
+        android:id="@+id/edpassword"
         android:layout_margin="20dp"
-        android:hint="input username"
-        android:id="@+id/edPassword"
+        android:hint="password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <Button
-        android:text="login"
+    <EditText
+        android:id="@+id/edfullname"
         android:layout_margin="20dp"
-        android:id="@+id/btnLogin"
+        android:hint="full name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <Button
+    <EditText
+        android:id="@+id/edemail"
         android:layout_margin="20dp"
-        android:text="Register here"
-        android:textColor="@color/white"
-        android:id="@+id/btnRegister"
+        android:hint="email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <ProgressBar
         android:visibility="gone"
-        android:layout_gravity="center"
         android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnregister"
+        android:text="register now !"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

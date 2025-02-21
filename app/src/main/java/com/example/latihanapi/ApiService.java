@@ -15,4 +15,13 @@ public interface ApiService {
     );
 
     // register api here
+    @FormUrlEncoded
+    @POST("latihan/register-user")
+    Call<RegisterResponse> registerUser(
+            @Field("username") String username,
+            @Field("password") String password,
+            @Field("full_name") String fullName,
+            @Field("email") String email
+    );
+
 }

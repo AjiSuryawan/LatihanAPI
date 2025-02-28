@@ -35,7 +35,8 @@ public class RegisterPage extends AppCompatActivity {
 
         edusername = findViewById(R.id.edusername);
         edpassword = findViewById(R.id.edpassword);
-        edfullname = findViewById(R.id.edfullname);
+        edfullname = findViewById(R.id.edfullname);// show progress bar
+        // button gone
         edemail = findViewById(R.id.edemail);
         btnregister = findViewById(R.id.btnregister);
         btnregister.setOnClickListener(new View.OnClickListener() {
